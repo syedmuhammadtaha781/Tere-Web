@@ -11,7 +11,6 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    border: 5px solid red;
     padding: 1.5em 3em;
     background-color: #fff;
 }
@@ -190,7 +189,8 @@ nav{
         margin: 0;
         padding: 1em;
     }
-    @media (max-width:1100px) {
+    }
+   @media (max-width:1100px) {
         .home-footer{
             justify-self: center;
         }
@@ -213,10 +213,9 @@ nav{
             font-size: 1em;
         }
     }
-}
 
 
-@media (max-width:320px) {
+@media (max-width:330px) {
       .home-footer-inner>input{
             padding: 1em;
         }
@@ -392,54 +391,233 @@ nav{
         font-size: 1.3em;
     }
  }
+ #terebenefits{
+    margin-bottom: 15em;
+ }
  #terebenefits>h1{
-    display: flex;
-    justify-content: center;
-    gap: 0.6em;
+    color: #000;
     font-size: 2.9em;
     font-weight: 800;
-    margin-top: 2em;
- }
-  #terebenefits>h1>span{
-    color: #75BF7A;
-  }
-  .benefit{
+    text-align: center;
     margin-top: 3em;
-  }
-  .Frame{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    padding: 3em 5em;
-  }
-  .Frame-2{
-    margin-top: 2em;
-  }
-  .Frame-3{
-    margin-top: 2em;
-  }
-  .Frame>.txt>.span-1{
+ }
+ #terebenefits>h1>span{
     color: #75BF7A;
-    font-size: 5.5em;
-    font-weight: 500;
-  }
-  .Frame>.txt>.span-2{
-    font-size: 2.1em;
-    font-weight: 800;
-  }
-  .Frame>.txt>p{
-    color: #9E9DA2;
-    font-size: 1.3em;
-    font-weight: 500;
-    width: 32.5em;
-  }
-  .benefit-inner{
+ }
+ .Frame-outer{
     display: flex;
     justify-content: left;
-  }
-  .benefit-inner-2{
+ }
+ .Frame-outer-2{
     display: flex;
     justify-content: right;
-  }
-
+    align-items: center;
+ }
+.Frame{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    position: relative;
+    background-color: #fff;
+    margin-top: 5em;
+    padding: 1em 3em;
+}
+.Frame-paragraph{
+    position: absolute;
+    top: 120px;
+    left: 52px;
+}
+.Frame-paragraph>p{
+    width: 340px;
+    color: #9E9DA2;
+    font-size: 1.375em;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+.Frame>.txt{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+.Frame>.txt>.heading{
+    height: fit-content;
+}
+.Frame>.txt>span{
+    font-size: 5.5em;
+    font-weight: 500;
+    color: #75BF7A;
+    height: fit-content;
+}
+.Frame>.txt>.heading>h1{
+    font-size: 2.1em;
+    font-weight: 600;
+    width: 7em;
+}
+.Frame>p{
+    font-size: 1.375em;
+    font-weight: 500;
+    color: #9E9DA2;
+}
+.Frame-2>img{
+    order: -1;
+}
+.Frame-2>.Frame-paragraph{
+    left: 450px;
+}
+.Frame-3{
+    gap: 80px;
+}
+@media (max-width:910px) {
+    .Frame-outer{
+        justify-content: center;
+    }
+    .Frame-outer-2{
+        justify-content: center;
+    }
+    .Frame{
+        flex-direction: column;
+    }
+    .Frame-2>img{
+        order: 3;
+    }
+    .Frame{
+        gap: 1.5em;
+        padding-bottom: 10em;
+    }
+    .Frame-paragraph{
+        left: 0;
+        top: 0;
+    }
+    .Frame-paragraph>p{
+        text-align: center;
+    }
+    .Frame-2>.Frame-paragraph{
+        left: 0;
+        top: 300px;
+    }
+    .Frame-3>.Frame-paragraph{
+        left: 52px;
+        top: 420px;
+    }
+    .Frame-2>.Frame-paragraph{
+        left: 52px;
+        top: 510px;
+    }
+    .Frame-1>.Frame-paragraph{
+        left: 52px;
+        top: 540px;
+    }
+}
+@media (max-width:500px) {
+    #terebenefits>h1{
+        font-size: 1.5em;
+    }
+    .Frame>.txt>span{
+        font-size: 4.048em;
+    }
+    .Frame>.txt>.heading>h1{
+        font-size: 1.55em;
+    }
+    .Frame>img{
+        width: 14em;
+        margin: 0 auto;
+    }
+    .Frame-1>.Frame-paragraph{
+        top: 360px;
+        left: 30px;
+    }
+    .Frame-2>.Frame-paragraph{
+        top: 380px;
+        left: 30px;
+    }
+    .Frame-3>.Frame-paragraph{
+        left: 13px;
+        top: 300px;
+    }
+}
+@media (max-width:380px) {
+    .Frame{
+        padding: 1em 0 10em 0;
+        margin: 5em auto 0 auto;
+        padding-left: 1em;
+    }
+    .Frame-paragraph>p{
+        width: 230px;
+    }
+    .Frame-3{
+        padding-bottom: 14em;
+    }
+}
+#helpcenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 4em;
+    padding-top: 3em;
+    border-bottom: 0.001em solid #8B8BA5;
+}
+#helpcenter>.help-txt{
+    width: 12.8em;
+}
+#helpcenter>.help-txt>h1{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+#helpcenter>.help-txt>p{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #8B8BA5;
+    line-height: 2.7em;
+    text-align: center;
+}
+#helpcenter>button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 800;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+}
+footer{
+    padding-bottom: 7em;
+    background-color: #fff;
+    padding-top: 2em;
+}
+footer>p{
+    color: #75BF7A;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+@media (max-width:1000px) {
+    #helpcenter{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .help-txt-1{
+        order: 3;
+    }
+    .help-txt-2{
+        display: none;
+    }
+}
+@media (max-width:350px) {
+    footer>p{
+    width: 16em;
+    margin: 0 auto;
+}
+#helpcenter>button>img{
+    width: 1.67em;
+}
+#helpcenter>button{
+    font-size: 0.9em;
+} 
+}
